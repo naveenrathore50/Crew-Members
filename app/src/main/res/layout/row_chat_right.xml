@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_color="@null"
+            android:src="@drawable/ic_default_img"
+            android:id="@+id/ProfileIV_chat"
+            android:visibility="gone"
+            >
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:id="@+id/timestampTV"
+            android:text="Date and Time"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp">
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/MessageTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="His Name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_sender"
+            android:padding="15dp"
+            >
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/isSeenTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:text="Seen"
+        android:textColor="@color/common_google_signin_btn_text_light">
+    </TextView>
+
+</LinearLayout>
